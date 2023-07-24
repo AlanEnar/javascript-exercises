@@ -1,4 +1,7 @@
 const sumAll = function(a, b) {
+    if (typeof a !== "number" || typeof b !== "number"){
+        return "ERROR";
+    }
     // Use ternary operators to assign biggest to "bigNum" and smallest 
     // to "smallNum"
     let smallNum = a < b ? a : b;
